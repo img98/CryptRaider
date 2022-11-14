@@ -42,4 +42,5 @@ private:
 	float GrabRadius = 100;
 
 	UPhysicsHandleComponent* GetPhysicsHandle() const;
+	bool GetGrabbableInReach(FHitResult& HitResult) const;
 };

@@ -39,7 +39,9 @@ void UMover::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponent
 		FVector NewLocation = FMath::VInterpConstantTo(CurrentLocation, TargetLocation, DeltaTime, Speed);
 		GetOwner()->SetActorLocation(NewLocation);
 	}
-
-
 }
 
+void UMover::SetShouldMove(bool newShouldMove)
+{
+	ShouldMove = newShouldMove;
+}
